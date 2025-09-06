@@ -37,23 +37,27 @@ cd employee-management-system
 ```
 ### 🔹 2. Install Dependencies
 **If using Package Manager Console (Visual Studio):**
-  -`Install-Package Microsoft.EntityFrameworkCore`
-  -`Install-Package Microsoft.EntityFrameworkCore.SqlServer`
-  -`Install-Package Microsoft.EntityFrameworkCore.Tools`
+```
+  -Install-Package Microsoft.EntityFrameworkCore
+  -Install-Package Microsoft.EntityFrameworkCore.SqlServer
+  -Install-Package Microsoft.EntityFrameworkCore.Tools
+```
   
 **Or via .NET CLI:**
-  - `dotnet add package Microsoft.EntityFrameworkCore`
-  -`dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
-  -`dotnet add package Microsoft.EntityFrameworkCore.Tools`
+```
+  - dotnet add package Microsoft.EntityFrameworkCore
+  - dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  - dotnet add package Microsoft.EntityFrameworkCore.Tools
+```
 
 ### 🔹 3. Configure Database:
 Update your connection string inside EmployeeContext.cs:
-`protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+```protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 {
     optionsBuilder.UseSqlServer(
         "Server=localhost;Database=EmployeeDB;Trusted_Connection=True;TrustServerCertificate=True;");
 }
-`
+```
 ### 🔹 4. Apply Migrations:
 **Run in Package Manager Console:**
   ```
@@ -62,11 +66,13 @@ Update your connection string inside EmployeeContext.cs:
   ```
 
 **Or via .NET CLI:**
+```
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+```
 
 ### 🔹 5. Run the App:
-`dotnet run`
+```dotnet run```
 
 ## 📂 Project Structure
 ```bash

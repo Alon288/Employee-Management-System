@@ -37,10 +37,10 @@ cd employee-management-system
 ```
 ### 🔹 2. Install Dependencies
 **If using Package Manager Console (Visual Studio):**
-```
-  -Install-Package Microsoft.EntityFrameworkCore
-  -Install-Package Microsoft.EntityFrameworkCore.SqlServer
-  -Install-Package Microsoft.EntityFrameworkCore.Tools
+```powershell
+  Install-Package Microsoft.EntityFrameworkCore
+  Install-Package Microsoft.EntityFrameworkCore.SqlServer
+  Install-Package Microsoft.EntityFrameworkCore.Tools
 ```
   
 **Or via .NET CLI:**

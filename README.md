@@ -34,6 +34,77 @@ This project demonstrates **OOP, CRUD operations, EF Core migrations, and clean 
 ```bash
 git clone https://github.com/Alon288/employee-management-system.git
 cd employee-management-system
+```
+### 🔹 2. Install Dependencies
+If using Package Manager Console (Visual Studio):
+  -`Install-Package Microsoft.EntityFrameworkCore`
+  -`Install-Package Microsoft.EntityFrameworkCore.SqlServer`
+  -`Install-Package Microsoft.EntityFrameworkCore.Tools`
+  
+Or via .NET CLI:
+  - `dotnet add package Microsoft.EntityFrameworkCore`
+  -`dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+  -`dotnet add package Microsoft.EntityFrameworkCore.Tools`
 
-### 🔹 2. Clone the Repository
+### 🔹 3. Configure Database:
+Update your connection string inside EmployeeContext.cs:
+`protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.UseSqlServer(
+        "Server=localhost;Database=EmployeeDB;Trusted_Connection=True;TrustServerCertificate=True;");
+}
+`
+### 🔹 4. Apply Migrations:
+Run in Package Manager Console:
+`Add-Migration InitialCreate
+Update-Database`
+
+Or via .NET CLI:
+`dotnet ef migrations add InitialCreate
+dotnet ef database update`
+
+### 🔹 5. Run the App:
+`dotnet run`
+
+## 📂 Project Structure
+```bash
+├── Employee.cs           # Employee model (POCO class)
+├── EmployeeContext.cs    # EF Core DbContext
+├── Program.cs            # Main program with CRUD logic
+├── Migrations/           # Auto-generated EF Core migrations
+├── EmployeeDB (SQL)      # Database (auto-created by EF Core)
+├── README.md             # Documentation
+```
+
+## 🖥️ Sample Usage
+=== Employee Management System (EF Core) ===
+1. Add Employee
+2. View Employees
+3. Search Employee by ID
+4. Update Employee
+5. Delete Employee
+6. Exit
+Choose an option: 1
+Enter Name: Ayesha
+Enter Department: IT
+Enter Salary: 60000
+✅ Employee added successfully!
+
+Choose an option: 2
+--- Employee List ---
+ID: 1, Name: Ayesha, Dept: IT, Salary: $60,000.00
+
+## 🎯 Learning Objectives
+  - Learn Entity Framework Core (EF Core) with SQL Server.
+  - Understand DbContext, DbSet, and Migrations.
+  - Practice CRUD operations using LINQ.
+  - Showcase Clean Code + ORM skills for interviews.
+
+## 👨‍💻 Author
+Developed by Syed Najeeb Ahmed (Github: Alon288) 👋
+
+
+
+
+
 

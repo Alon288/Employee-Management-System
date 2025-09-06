@@ -56,9 +56,10 @@ Update your connection string inside EmployeeContext.cs:
 `
 ### 🔹 4. Apply Migrations:
 **Run in Package Manager Console:**
-  ```powershell
+  ```
   Add-Migration InitialCreate
   Update-Database
+  ```
 
 **Or via .NET CLI:**
 dotnet ef migrations add InitialCreate

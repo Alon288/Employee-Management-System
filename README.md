@@ -36,12 +36,12 @@ git clone https://github.com/Alon288/employee-management-system.git
 cd employee-management-system
 ```
 ### 🔹 2. Install Dependencies
-If using Package Manager Console (Visual Studio):
+**If using Package Manager Console (Visual Studio):**
   -`Install-Package Microsoft.EntityFrameworkCore`
   -`Install-Package Microsoft.EntityFrameworkCore.SqlServer`
   -`Install-Package Microsoft.EntityFrameworkCore.Tools`
   
-Or via .NET CLI:
+**Or via .NET CLI:**
   - `dotnet add package Microsoft.EntityFrameworkCore`
   -`dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
   -`dotnet add package Microsoft.EntityFrameworkCore.Tools`
@@ -55,13 +55,13 @@ Update your connection string inside EmployeeContext.cs:
 }
 `
 ### 🔹 4. Apply Migrations:
-Run in Package Manager Console:
-`Add-Migration InitialCreate
-Update-Database`
+**Run in Package Manager Console:**
+  -`Add-Migration InitialCreate`
+  -`Update-Database`
 
-Or via .NET CLI:
-`dotnet ef migrations add InitialCreate
-dotnet ef database update`
+**Or via .NET CLI:**
+-`dotnet ef migrations add InitialCreate`
+-`dotnet ef database update`
 
 ### 🔹 5. Run the App:
 `dotnet run`

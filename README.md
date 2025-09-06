@@ -56,12 +56,13 @@ Update your connection string inside EmployeeContext.cs:
 `
 ### 🔹 4. Apply Migrations:
 **Run in Package Manager Console:**
-  -`Add-Migration InitialCreate`
-  -`Update-Database`
+  ```powershell
+  Add-Migration InitialCreate
+  Update-Database
 
 **Or via .NET CLI:**
--`dotnet ef migrations add InitialCreate`
--`dotnet ef database update`
+dotnet ef migrations add InitialCreate
+dotnet ef database update
 
 ### 🔹 5. Run the App:
 `dotnet run`

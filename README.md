@@ -37,18 +37,18 @@ cd employee-management-system
 ```
 ### 🔹 2. Install Dependencies
 **If using Package Manager Console (Visual Studio):**
-```powershell
-  Install-Package Microsoft.EntityFrameworkCore
-  Install-Package Microsoft.EntityFrameworkCore.SqlServer
-  Install-Package Microsoft.EntityFrameworkCore.Tools
-```
+
+  - `Install-Package Microsoft.EntityFrameworkCore`
+  - `Install-Package Microsoft.EntityFrameworkCore.SqlServer`
+  - `Install-Package Microsoft.EntityFrameworkCore.Tools`
+
   
 **Or via .NET CLI:**
-```
-  - dotnet add package Microsoft.EntityFrameworkCore
-  - dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-  - dotnet add package Microsoft.EntityFrameworkCore.Tools
-```
+
+  - `dotnet add package Microsoft.EntityFrameworkCore`
+  - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer`
+  - `dotnet add package Microsoft.EntityFrameworkCore.Tools`
+
 
 ### 🔹 3. Configure Database:
 Update your connection string inside EmployeeContext.cs:

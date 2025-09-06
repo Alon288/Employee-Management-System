@@ -31,10 +31,9 @@ This project demonstrates **OOP, CRUD operations, EF Core migrations, and clean 
 ## 🚀 How to Run
 
 ### 🔹 1. Clone the Repository
-``bash
+```bash
 git clone https://github.com/Alon288/employee-management-system.git
 cd employee-management-system
-``bash
 
 ### 🔹 2. Clone the Repository
 
